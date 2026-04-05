@@ -2,14 +2,18 @@
   "name": "porto-petik",
   "private": true,
   "version": "0.0.0",
+  "homepage": "http://rafaelfebriano.github.io/projectreact_petik",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d list",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
